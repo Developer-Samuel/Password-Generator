@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body 
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #007bff;
+    color: #fff;
+    font-family: "Sora";
+}
+.card
+{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 550px;
+    height: 390px;
+    border-radius: 12.5px;
+    background: #31343D;
+}
+.card .title 
+{
+    position: relative;
+    padding: 30px;
+    text-align: center;
+}
+.card .random-password
+{
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    padding: 0 30px;
+}
+.card .random-password input 
+{
+    position: relative;
+    width: 100%;
+    padding: 12.5px 7.5px;
+    outline: 0;
+    border: 0;
+    border-radius: 7.5px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.card .random-password .copy
+{
+    position: absolute;
+    transform: translateY(-50%);
+    right: 35px;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #000;
+    z-index: 111;
+    display: none;
+    cursor: pointer;
+}
+.card .random-password:hover .copy 
+{
+    display: block;
+}
+.card .random-password .copy img
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 7.5px;
+    filter: invert(100%);
+}
+.card .random-password small
+{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    font-size: 12.5px;
+    padding: 1.5px 35px;
+    color: #31343D;
+    z-index: 111;
+    display: none;
+}
+.card .length
+{
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    padding: 0 30px;
+}
+.card .length p 
+{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+}
+.card .length .row 
+{
+    position: relative;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .length .row .change-value 
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 12px 0 #007bff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+.card .length .row .change-value:hover 
+{
+    box-shadow: 0 0 20px 1px #007bff;
+}
+.card .length .row .change-value span 
+{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.card .length .row input 
+{
+    position: relative;
+    width: 100%;
+    margin: 0 20px;
+}
+.card .characters-used
+{
+    position: relative;
+    margin-top: 30px;
+}
+.card .characters-used p 
+{
+    position: relative;
+    font-size: 18px;
+    text-align: center;
+}
+.card .characters-used .list 
+{
+    position: relative;
+    margin-top: 15px;
+    padding: 0 65px 0 55px;
+    display: flex;
+    justify-content: space-between;
+}
+.card .characters-used .list .item input
+{
+    position: relative;
+    transform: scale(1.8);
+    cursor: pointer;
+}
+.card .characters-used .list .item label 
+{
+    position: relative;
+    left: 10px;
+    font-size: 18px;
+}
+.card .generate-password
+{
+    opacity: 0; 
+    pointer-events: none;
+}
+
+
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7.5px;
+    background: #007bff;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    box-shadow: 0 0 8px 0 #000;
+    border-radius: 50%;
+    cursor: pointer;
+}

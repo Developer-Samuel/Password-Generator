@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Mukta:wght@200;300;400;500;600;700;800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">Password Generator</h1>
+        <div class="random-password">
+            <div class="copy">
+                <img src="img/copy.png">
+            </div>
+            <small>copied</small>
+            <input type="text" name="password" id="password" value="" readonly>
+        </div>
+        <div class="length">
+            <p>Length: <b id="lengthValue">15</b></p>
+            <div class="row">
+                <div class="change-value" id="decrease-length">
+                    <span>−</span>
+                </div>
+                <input type="range" min="1" max="50" value="15" class="slider" id="lengthSlider">
+                <div class="change-value" id="increase-length">
+                    <span>+</span>
+                </div>
+            </div>
+        </div>
+        <div class="characters-used">
+            <p>Characters used:</p>
+            <div class="list">
+                <div class="item">
+                    <input type="checkbox" name="small-characters" id="small-characters" checked>
+                    <label for="small-characters">abc</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="large-characters" id="large-characters" checked>
+                    <label for="large-characters">ABC</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="numbers-characters" id="numbers-characters" checked>
+                    <label for="numbers-characters">123</label>
+                </div>
+                <div class="item">
+                    <input type="checkbox" name="special-characters" id="special-characters">
+                    <label for="special-characters">$#@</label>
+                </div>
+            </div> 
+        </div>
+        <div class="generate-password">
+            <button type="button" id="generate-password-btn">
+                <span>Generate password</span>
+            </button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/password-generator.js"></script>
+</body>
+</html>
